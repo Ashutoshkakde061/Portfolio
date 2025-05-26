@@ -1,0 +1,102 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero Section */
+  #myself {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 100px 0;
+  }
+  
+  #myself h1 {
+    font-size: 3rem;
+  }
+  
+  #myself .btn {
+    background-color: #fff;
+    color: #2575fc;
+    font-weight: bold;
+  }
+  
+  #myself .btn:hover {
+    background-color: #2575fc;
+    color: #fff;
+  }
+  
+  /* About Section */
+  #about img {
+    max-width: 100%;
+    border: 5px solid #ddd;
+  }
+  
+  /* Section Headings */
+  h2 {
+    font-weight: bold;
+    color: #2b0d79;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Skills Section */
+  .progress-bar {
+    font-weight: bold;
+  }
+  
+  /* Projects Section */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Contact Section */
+  form .form-control {
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  form .btn {
+    background-color: #2b0d79;
+    color: white;
+  }
+  
+  form .btn:hover {
+    background-color: #4526a6;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2b0d79;
+  }
+  
+  footer a {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2.2rem;
+    }
+  
+    #about .row {
+      flex-direction: column-reverse;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
