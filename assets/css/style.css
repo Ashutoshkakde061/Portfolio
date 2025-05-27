@@ -10,6 +10,7 @@ body {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: white;
     padding: 100px 0;
+    
   }
   
   #myself h1 {
@@ -28,9 +29,16 @@ body {
   }
   
   /* About Section */
-  #about img {
-    max-width: 100%;
+  #about img.about-img {
+    max-width: 85%;
     border: 5px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #about img.about-img:hover {
+    transform: scale(1.05);
   }
   
   /* Section Headings */
@@ -99,4 +107,48 @@ body {
       width: 100%;
     }
   }
-  
+  /* Add space to prevent sections from hiding under navbar */
+section {
+  scroll-margin-top: 70px;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Navbar link styling on hover */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0d6efd; /* Bootstrap primary color */
+  text-decoration: underline;
+}
+
+.navbar-brand{
+  font-size: 25px;
+}
+.navbar-nav{
+  font-size: 20px;
+}
+
+
+
+/* Hide the default cursor */
+body {
+  cursor: none;
+}
+
+/* Custom Cursor Style */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(109, 143, 207, 0.932); /* Bootstrap primary color with transparency */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+  z-index: 9999;
+  backdrop-filter: blur(2px);
+}
