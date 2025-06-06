@@ -1,8 +1,9 @@
 /* General */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+    /* line-height: 1.6; */
     scroll-behavior: smooth;
+    
   }
   
   /* Hero Section */
@@ -41,6 +42,9 @@ body {
     transform: scale(1.05);
   }
   
+  #about .lead{
+    font-size: 18px;
+  }
   /* Section Headings */
   h2 {
     font-weight: bold;
